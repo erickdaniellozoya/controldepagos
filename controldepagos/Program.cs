@@ -16,7 +16,7 @@ namespace controldepagos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Reportecs());
+            Application.Run(new login());
         }
     }
 }
