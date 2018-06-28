@@ -46,3 +46,19 @@ C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\contr
 C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.RegistrarAlumno.resources
 C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.Reportecs.resources
 C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.csproj.GenerateResource.Cache
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\bin\Debug\controldepagos.exe.config
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\obj\Debug\controldepagos.exe
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\obj\Debug\controldepagos.pdb
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\bin\Debug\controldepagos.exe
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\bin\Debug\controldepagos.pdb
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\bin\Debug\MySql.Data.dll
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\obj\Debug\controldepagos.csprojResolveAssemblyReference.cache
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\obj\Debug\controldepagos.Index.resources
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\obj\Debug\controldepagos.login.resources
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\obj\Debug\controldepagos.Pagos.resources
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\obj\Debug\controldepagos.personal.resources
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\obj\Debug\controldepagos.Properties.Resources.resources
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\obj\Debug\controldepagos.RegistrarAdmin.resources
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\obj\Debug\controldepagos.RegistrarAlumno.resources
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\obj\Debug\controldepagos.Reportecs.resources
+C:\Users\ErickDaniel\Documents\controldepagos\controldepagos\obj\Debug\controldepagos.csproj.GenerateResource.Cache
