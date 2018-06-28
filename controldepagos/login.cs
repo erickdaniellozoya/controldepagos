@@ -25,7 +25,7 @@ namespace controldepagos
             {
                 query = string.Format("SELECT CONCAT(nombre,' ',apelldio_paterno,' ',apellido_materno) FROM admins WHERE id={0}", txtMatricula.Text);
                 DataTable dt = new DataTable();
-                dt = bd.fillTable(query);
+            
                 tabla.DataSource = dt;
                 Index b2 = new Index(tabla.Rows[0].Cells[0].Value.ToString());
                 b2.Show();
