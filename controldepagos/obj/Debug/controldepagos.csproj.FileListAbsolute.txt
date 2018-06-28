@@ -1,0 +1,48 @@
+c:\users\allison vazquez z\documents\visual studio 2015\Projects\controldepagos\controldepagos\bin\Debug\controldepagos.exe.config
+C:\Users\Allison Vazquez Z\Documents\Visual Studio 2015\Projects\controldepagos\controldepagos\bin\Debug\controldepagos.exe
+C:\Users\Allison Vazquez Z\Documents\Visual Studio 2015\Projects\controldepagos\controldepagos\bin\Debug\controldepagos.pdb
+C:\Users\Allison Vazquez Z\Documents\Visual Studio 2015\Projects\controldepagos\controldepagos\obj\Debug\controldepagos.csprojResolveAssemblyReference.cache
+C:\Users\Allison Vazquez Z\Documents\Visual Studio 2015\Projects\controldepagos\controldepagos\obj\Debug\controldepagos.Index.resources
+C:\Users\Allison Vazquez Z\Documents\Visual Studio 2015\Projects\controldepagos\controldepagos\obj\Debug\controldepagos.login.resources
+C:\Users\Allison Vazquez Z\Documents\Visual Studio 2015\Projects\controldepagos\controldepagos\obj\Debug\controldepagos.Pagos.resources
+C:\Users\Allison Vazquez Z\Documents\Visual Studio 2015\Projects\controldepagos\controldepagos\obj\Debug\controldepagos.Properties.Resources.resources
+C:\Users\Allison Vazquez Z\Documents\Visual Studio 2015\Projects\controldepagos\controldepagos\obj\Debug\controldepagos.RegistrarAdmin.resources
+C:\Users\Allison Vazquez Z\Documents\Visual Studio 2015\Projects\controldepagos\controldepagos\obj\Debug\controldepagos.RegistrarAlumno.resources
+C:\Users\Allison Vazquez Z\Documents\Visual Studio 2015\Projects\controldepagos\controldepagos\obj\Debug\controldepagos.Reportecs.resources
+C:\Users\Allison Vazquez Z\Documents\Visual Studio 2015\Projects\controldepagos\controldepagos\obj\Debug\controldepagos.csproj.GenerateResource.Cache
+C:\Users\Allison Vazquez Z\Documents\Visual Studio 2015\Projects\controldepagos\controldepagos\obj\Debug\controldepagos.exe
+C:\Users\Allison Vazquez Z\Documents\Visual Studio 2015\Projects\controldepagos\controldepagos\obj\Debug\controldepagos.pdb
+C:\Users\Allison Vazquez Z\Documents\Visual Studio 2015\Projects\controldepagos\controldepagos\obj\Debug\controldepagos.personal.resources
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\bin\Debug\controldepagos.exe.config
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.exe
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.pdb
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\bin\Debug\controldepagos.exe
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\bin\Debug\controldepagos.pdb
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.csprojResolveAssemblyReference.cache
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.Index.resources
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.login.resources
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.Pagos.resources
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.personal.resources
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.Properties.Resources.resources
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.RegistrarAdmin.resources
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.RegistrarAlumno.resources
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.Reportecs.resources
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.csproj.GenerateResource.Cache
+C:\Users\ErickDaniel\Desktop\controldepagos\controldepagos\bin\Debug\MySql.Data.dll
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\bin\Debug\controldepagos.exe.config
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.exe
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.pdb
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\bin\Debug\controldepagos.exe
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\bin\Debug\controldepagos.pdb
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\bin\Debug\MySql.Data.dll
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\bin\Debug\MySql.Data.xml
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.csprojResolveAssemblyReference.cache
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.Index.resources
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.login.resources
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.Pagos.resources
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.personal.resources
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.Properties.Resources.resources
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.RegistrarAdmin.resources
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.RegistrarAlumno.resources
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.Reportecs.resources
+C:\Users\Allison Vazquez Z\Desktop\controldepagos\controldepagos\obj\Debug\controldepagos.csproj.GenerateResource.Cache
