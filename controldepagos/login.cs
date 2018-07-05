@@ -104,10 +104,5 @@ namespace controldepagos
         {
             txtMatricula.Text = txtMatricula.Text == "Ingresar matricula" ? "" : txtMatricula.Text;
         }
-
-        private void login_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }
