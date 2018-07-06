@@ -28,7 +28,7 @@ namespace controldepagos
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-          RegistrarAlumno b2 = new RegistrarAlumno();
+          RegistrarAlumno b2 = new RegistrarAlumno(u);
             b2.Show();
             this.Hide();
         }
