@@ -39,8 +39,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtCantidadn = new System.Windows.Forms.TextBox();
+            this.txtCantidadl = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -102,7 +102,6 @@
             this.label19.Size = new System.Drawing.Size(125, 19);
             this.label19.TabIndex = 180;
             this.label19.Text = "Cantidad letra:";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // label18
             // 
@@ -161,7 +160,6 @@
             this.button5.Size = new System.Drawing.Size(134, 78);
             this.button5.TabIndex = 194;
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // textBox8
             // 
@@ -174,27 +172,28 @@
             this.textBox8.TabIndex = 203;
             this.textBox8.Text = "Ingresar matricula";
             // 
-            // textBox3
+            // txtCantidadn
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textBox3.Location = new System.Drawing.Point(228, 176);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(250, 20);
-            this.textBox3.TabIndex = 204;
-            this.textBox3.Text = "Ingresar cantidad en numeros";
+            this.txtCantidadn.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCantidadn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantidadn.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.txtCantidadn.Location = new System.Drawing.Point(228, 176);
+            this.txtCantidadn.Name = "txtCantidadn";
+            this.txtCantidadn.Size = new System.Drawing.Size(250, 20);
+            this.txtCantidadn.TabIndex = 204;
+            this.txtCantidadn.Text = "Ingresar cantidad en numeros";
+            this.txtCantidadn.TextChanged += new System.EventHandler(this.txtCantidadn_TextChanged);
             // 
-            // textBox5
+            // txtCantidadl
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textBox5.Location = new System.Drawing.Point(228, 209);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(233, 20);
-            this.textBox5.TabIndex = 205;
-            this.textBox5.Text = "Ingresar cantidad en letras";
+            this.txtCantidadl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCantidadl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantidadl.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.txtCantidadl.Location = new System.Drawing.Point(228, 209);
+            this.txtCantidadl.Name = "txtCantidadl";
+            this.txtCantidadl.Size = new System.Drawing.Size(233, 20);
+            this.txtCantidadl.TabIndex = 205;
+            this.txtCantidadl.Text = "Ingresar cantidad en letras";
             // 
             // textBox7
             // 
@@ -262,8 +261,8 @@
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtCantidadl);
+            this.Controls.Add(this.txtCantidadn);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -292,8 +291,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtCantidadn;
+        private System.Windows.Forms.TextBox txtCantidadl;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox6;
