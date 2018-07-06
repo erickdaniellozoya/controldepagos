@@ -26,5 +26,10 @@ namespace controldepagos
         {
 
         }
+
+        private void personal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
