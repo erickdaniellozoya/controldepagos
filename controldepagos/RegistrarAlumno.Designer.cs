@@ -35,20 +35,24 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtdir = new System.Windows.Forms.TextBox();
+            this.txtnp = new System.Windows.Forms.TextBox();
+            this.txttel = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtap = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
+            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.btnInicio = new System.Windows.Forms.Button();
+            this.txtam = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.cbxEscolaridad = new System.Windows.Forms.ComboBox();
+            this.cbxGrado = new System.Windows.Forms.ComboBox();
+            this.cbxGrupo = new System.Windows.Forms.ComboBox();
+            this.dgv = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // button10
@@ -86,7 +90,6 @@
             this.button9.Size = new System.Drawing.Size(57, 48);
             this.button9.TabIndex = 217;
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -160,40 +163,48 @@
             this.button4.TabIndex = 213;
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // textBox8
+            // txtdir
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textBox8.Location = new System.Drawing.Point(245, 345);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(179, 16);
-            this.textBox8.TabIndex = 211;
-            this.textBox8.Text = "Ingresar dirección";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.txtdir.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtdir.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdir.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.txtdir.Location = new System.Drawing.Point(247, 345);
+            this.txtdir.Name = "txtdir";
+            this.txtdir.Size = new System.Drawing.Size(179, 16);
+            this.txtdir.TabIndex = 211;
+            this.txtdir.Text = "Ingresar Dirección";
+            this.txtdir.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtdir.Enter += new System.EventHandler(this.txtdir_Enter);
+            this.txtdir.Leave += new System.EventHandler(this.txtdir_Leave);
             // 
-            // textBox7
+            // txtnp
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textBox7.Location = new System.Drawing.Point(254, 243);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(179, 16);
-            this.textBox7.TabIndex = 210;
-            this.textBox7.Text = "Ingresar nombre de padres";
+            this.txtnp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtnp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnp.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.txtnp.Location = new System.Drawing.Point(254, 243);
+            this.txtnp.Name = "txtnp";
+            this.txtnp.Size = new System.Drawing.Size(179, 16);
+            this.txtnp.TabIndex = 210;
+            this.txtnp.Text = "Ingresar Nombre De Padres";
+            this.txtnp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtnp.TextChanged += new System.EventHandler(this.txtnp_TextChanged);
+            this.txtnp.Enter += new System.EventHandler(this.txtnp_Enter);
+            this.txtnp.Leave += new System.EventHandler(this.txtnp_Leave);
             // 
-            // textBox6
+            // txttel
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textBox6.Location = new System.Drawing.Point(254, 151);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(179, 16);
-            this.textBox6.TabIndex = 209;
-            this.textBox6.Text = "Ingresar numero de padres";
+            this.txttel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txttel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttel.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.txttel.Location = new System.Drawing.Point(254, 151);
+            this.txttel.Name = "txttel";
+            this.txttel.Size = new System.Drawing.Size(179, 16);
+            this.txttel.TabIndex = 209;
+            this.txttel.Text = "Ingresar Numero De Padres";
+            this.txttel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txttel.Enter += new System.EventHandler(this.txttel_Enter);
+            this.txttel.Leave += new System.EventHandler(this.txttel_Leave);
             // 
             // textBox4
             // 
@@ -207,42 +218,35 @@
             this.textBox4.Text = "Ingresar escolaridad";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // txtap
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textBox3.Location = new System.Drawing.Point(43, 498);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(155, 16);
-            this.textBox3.TabIndex = 207;
-            this.textBox3.Text = "Ingresar grupo y grado";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtap.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtap.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtap.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.txtap.Location = new System.Drawing.Point(43, 272);
+            this.txtap.Name = "txtap";
+            this.txtap.Size = new System.Drawing.Size(169, 16);
+            this.txtap.TabIndex = 206;
+            this.txtap.Text = "Ingresar Apellido Paterno";
+            this.txtap.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtap.TextChanged += new System.EventHandler(this.txtap_TextChanged);
+            this.txtap.Enter += new System.EventHandler(this.txtap_Enter);
+            this.txtap.Leave += new System.EventHandler(this.txtap_Leave);
             // 
-            // textBox2
+            // txtnombre
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textBox2.Location = new System.Drawing.Point(43, 272);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(169, 16);
-            this.textBox2.TabIndex = 206;
-            this.textBox2.Text = "Ingresar apellido paterno";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textBox5.Location = new System.Drawing.Point(43, 243);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(155, 16);
-            this.textBox5.TabIndex = 205;
-            this.textBox5.Text = "Ingresar nombre";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtnombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnombre.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.txtnombre.Location = new System.Drawing.Point(43, 243);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(155, 16);
+            this.txtnombre.TabIndex = 205;
+            this.txtnombre.Text = "Ingresar Nombre";
+            this.txtnombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtnombre.TextChanged += new System.EventHandler(this.txtnombre_TextChanged);
+            this.txtnombre.Enter += new System.EventHandler(this.txtnombre_Enter);
+            this.txtnombre.Leave += new System.EventHandler(this.txtnombre_Leave);
             // 
             // button2
             // 
@@ -280,66 +284,69 @@
             this.button1.TabIndex = 203;
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtMatricula
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textBox1.Location = new System.Drawing.Point(66, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 16);
-            this.textBox1.TabIndex = 202;
-            this.textBox1.Text = "Ingresar matricula";
+            this.txtMatricula.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMatricula.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatricula.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.txtMatricula.Location = new System.Drawing.Point(43, 151);
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(155, 16);
+            this.txtMatricula.TabIndex = 202;
+            this.txtMatricula.Text = "Ingresar matricula";
+            this.txtMatricula.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button3
+            // btnRegistrar
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(336, 465);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 60);
-            this.button3.TabIndex = 219;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnRegistrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegistrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegistrar.BackgroundImage")));
+            this.btnRegistrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRegistrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnRegistrar.FlatAppearance.BorderSize = 0;
+            this.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRegistrar.Location = new System.Drawing.Point(336, 465);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(126, 60);
+            this.btnRegistrar.TabIndex = 219;
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // button11
+            // btnInicio
             // 
-            this.button11.BackColor = System.Drawing.Color.Transparent;
-            this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button11.Location = new System.Drawing.Point(367, 13);
-            this.button11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(136, 90);
-            this.button11.TabIndex = 220;
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.btnInicio.BackColor = System.Drawing.Color.Transparent;
+            this.btnInicio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInicio.BackgroundImage")));
+            this.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnInicio.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnInicio.FlatAppearance.BorderSize = 0;
+            this.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicio.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnInicio.Location = new System.Drawing.Point(367, 30);
+            this.btnInicio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(95, 31);
+            this.btnInicio.TabIndex = 220;
+            this.btnInicio.UseVisualStyleBackColor = false;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
-            // textBox9
+            // txtam
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textBox9.Location = new System.Drawing.Point(43, 301);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(169, 16);
-            this.textBox9.TabIndex = 222;
-            this.textBox9.Text = "Ingresar apellido materno";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            this.txtam.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtam.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtam.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.txtam.Location = new System.Drawing.Point(43, 301);
+            this.txtam.Name = "txtam";
+            this.txtam.Size = new System.Drawing.Size(169, 16);
+            this.txtam.TabIndex = 222;
+            this.txtam.Text = "Ingresar Apellido Materno";
+            this.txtam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtam.TextChanged += new System.EventHandler(this.txtam_TextChanged);
+            this.txtam.Enter += new System.EventHandler(this.txtam_Enter);
+            this.txtam.Leave += new System.EventHandler(this.txtam_Leave);
             // 
             // label4
             // 
@@ -352,35 +359,77 @@
             this.label4.TabIndex = 226;
             this.label4.Text = "Registrar alumnos";
             // 
+            // cbxEscolaridad
+            // 
+            this.cbxEscolaridad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxEscolaridad.FormattingEnabled = true;
+            this.cbxEscolaridad.Items.AddRange(new object[] {
+            "Kinder",
+            "Primaria",
+            "Secundaria"});
+            this.cbxEscolaridad.Location = new System.Drawing.Point(49, 402);
+            this.cbxEscolaridad.Name = "cbxEscolaridad";
+            this.cbxEscolaridad.Size = new System.Drawing.Size(143, 21);
+            this.cbxEscolaridad.TabIndex = 227;
+            this.cbxEscolaridad.SelectedIndexChanged += new System.EventHandler(this.cbxEscolaridad_SelectedIndexChanged);
+            // 
+            // cbxGrado
+            // 
+            this.cbxGrado.FormattingEnabled = true;
+            this.cbxGrado.Location = new System.Drawing.Point(60, 499);
+            this.cbxGrado.Name = "cbxGrado";
+            this.cbxGrado.Size = new System.Drawing.Size(56, 21);
+            this.cbxGrado.TabIndex = 228;
+            // 
+            // cbxGrupo
+            // 
+            this.cbxGrupo.FormattingEnabled = true;
+            this.cbxGrupo.Location = new System.Drawing.Point(122, 499);
+            this.cbxGrupo.Name = "cbxGrupo";
+            this.cbxGrupo.Size = new System.Drawing.Size(56, 21);
+            this.cbxGrupo.TabIndex = 229;
+            // 
+            // dgv
+            // 
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Location = new System.Drawing.Point(509, 265);
+            this.dgv.Name = "dgv";
+            this.dgv.Size = new System.Drawing.Size(240, 150);
+            this.dgv.TabIndex = 230;
+            // 
             // RegistrarAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(498, 537);
+            this.Controls.Add(this.dgv);
+            this.Controls.Add(this.cbxGrupo);
+            this.Controls.Add(this.cbxGrado);
+            this.Controls.Add(this.cbxEscolaridad);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.txtam);
+            this.Controls.Add(this.btnInicio);
+            this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtdir);
+            this.Controls.Add(this.txtnp);
+            this.Controls.Add(this.txttel);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtap);
+            this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMatricula);
             this.Name = "RegistrarAlumno";
             this.Text = "Registrar alumno";
             this.Load += new System.EventHandler(this.RegistrarAlumno_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -394,19 +443,22 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtdir;
+        private System.Windows.Forms.TextBox txtnp;
+        private System.Windows.Forms.TextBox txttel;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtap;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtMatricula;
+        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Button btnInicio;
+        private System.Windows.Forms.TextBox txtam;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbxEscolaridad;
+        private System.Windows.Forms.ComboBox cbxGrado;
+        private System.Windows.Forms.ComboBox cbxGrupo;
+        private System.Windows.Forms.DataGridView dgv;
     }
 }

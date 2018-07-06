@@ -94,6 +94,7 @@
     <Compile Include="Reportecs.Designer.cs">
       <DependentUpon>Reportecs.cs</DependentUpon>
     </Compile>
+    <Compile Include="utilities.cs" />
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>

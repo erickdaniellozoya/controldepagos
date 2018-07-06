@@ -77,9 +77,9 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(373, 33);
+            this.button5.Location = new System.Drawing.Point(355, 40);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(89, 34);
+            this.button5.Size = new System.Drawing.Size(101, 34);
             this.button5.TabIndex = 220;
             this.button5.UseVisualStyleBackColor = false;
             // 
@@ -94,9 +94,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(481, 33);
+            this.button1.Location = new System.Drawing.Point(462, 38);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 34);
+            this.button1.Size = new System.Drawing.Size(127, 34);
             this.button1.TabIndex = 221;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -112,9 +112,9 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(595, 33);
+            this.button4.Location = new System.Drawing.Point(595, 38);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(89, 34);
+            this.button4.Size = new System.Drawing.Size(109, 34);
             this.button4.TabIndex = 222;
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -129,9 +129,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(710, 33);
+            this.button2.Location = new System.Drawing.Point(710, 38);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 34);
+            this.button2.Size = new System.Drawing.Size(126, 34);
             this.button2.TabIndex = 223;
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -146,10 +146,10 @@
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button11.Location = new System.Drawing.Point(829, 5);
+            this.button11.Location = new System.Drawing.Point(847, 38);
             this.button11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(136, 90);
+            this.button11.Size = new System.Drawing.Size(97, 33);
             this.button11.TabIndex = 224;
             this.button11.UseVisualStyleBackColor = false;
             // 
@@ -180,6 +180,7 @@
             this.Controls.Add(this.tabla);
             this.Name = "personal";
             this.Text = "Personal";
+            this.Load += new System.EventHandler(this.personal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
