@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Becas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Becas.Designer.cs">
+      <DependentUpon>Becas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscar.Designer.cs">
+      <DependentUpon>Buscar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +107,9 @@
       <DependentUpon>Reportecs.cs</DependentUpon>
     </Compile>
     <Compile Include="utilities.cs" />
+    <EmbeddedResource Include="Becas.resx">
+      <DependentUpon>Becas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>

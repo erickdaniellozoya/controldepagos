@@ -13,6 +13,7 @@ namespace controldepagos
     public partial class login : Form
     {
         MySqlCon bd = new MySqlCon();
+        utilities ut = new utilities();
         public login()
         {
             InitializeComponent();
@@ -20,21 +21,20 @@ namespace controldepagos
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string query = string.Format("SELECT id FROM admins WHERE id={0} AND contra=MD5('{1}')", txtMatricula.Text, txtContra.Text);
+            string query = string.Format("SELECT id FROM admins WHERE id={0} AND contra='{1}'", txtMatricula.Text, ut.encriptar(txtContra.Text));
             if (bd.Execute(query)!="-1")
             {
-                query = string.Format("SELECT CONCAT(nombre,' ',apelldio_paterno,' ',apellido_materno) FROM admins WHERE id={0}", txtMatricula.Text);
+                query = string.Format("SELECT nombre,apelldio_paterno,apellido_materno FROM admins WHERE id={0}", txtMatricula.Text);
                 DataTable dt = new DataTable();
                 dt = bd.fillTable(query);
                 tabla.DataSource = dt;
-                Index b2 = new Index(tabla.Rows[0].Cells[0].Value.ToString());
+                Index b2 = new Index(ut.Desencriptar(tabla.Rows[0].Cells[0].Value.ToString()) + " " + ut.Desencriptar(tabla.Rows[0].Cells[1].Value.ToString()) + " " + ut.Desencriptar(tabla.Rows[0].Cells[2].Value.ToString()));
                 b2.Show();
                 this.Hide();
             }else
             {
                 MessageBox.Show("Los datos son incorrectos","Error",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            
         }
 
         private void txtMatricula_Leave(object sender, EventArgs e)
@@ -103,6 +103,11 @@ namespace controldepagos
         private void txtMatricula_Enter(object sender, EventArgs e)
         {
             txtMatricula.Text = txtMatricula.Text == "Ingresar matricula" ? "" : txtMatricula.Text;
+        }
+
+        private void login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

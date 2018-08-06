@@ -35,14 +35,14 @@ namespace controldepagos
 
         private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Pagos b2 = new Pagos();
+            Pagos b2 = new Pagos(u);
             b2.Show();
             this.Hide();
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Reportecs b2 = new Reportecs();
+            Reportecs b2 = new Reportecs(u);
             b2.Show();
             this.Hide();
         }
@@ -50,7 +50,7 @@ namespace controldepagos
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
-            personal b2 = new personal();
+            personal b2 = new personal(u);
             b2.Show();
             this.Hide();
         }
@@ -65,12 +65,35 @@ namespace controldepagos
         private void Index_Load(object sender, EventArgs e)
         {
             lblUsuario.Text = "Usuario: " + u;
+
             this.Text = this.Text + " - " + u;
         }
 
         private void lblUsuario_TextChanged(object sender, EventArgs e)
         {
             lblUsuario.Location = new Point(lblUsuario.Location.X - lblUsuario.Text.Length * 4, lblUsuario.Location.Y);
+        }
+
+        private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Becas index = new Becas(u);
+            index.Show();
+            this.Hide();
+        }
+
+        private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+          
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Index_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

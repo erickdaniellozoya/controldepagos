@@ -14,6 +14,7 @@ namespace controldepagos
     public partial class RegistrarAdmin : Form
     {
         MySqlCon bd = new MySqlCon();
+        utilities ut = new utilities();
         bool toggle = false;
         string usuarios;
         public RegistrarAdmin(string u)
@@ -51,7 +52,7 @@ namespace controldepagos
             DataTable dt = new DataTable();
             dt = bd.fillTable(query);
             tabla.DataSource = dt;
-           // txtMatricula.Text = tabla.Rows[0].Cells[0].Value.ToString();
+            txtMatricula.Text = tabla.Rows[0].Cells[0].Value.ToString();
         }
 
         private void txtNombre_Leave(object sender, EventArgs e)
@@ -93,73 +94,96 @@ namespace controldepagos
 
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((int)e.KeyChar == (int)Keys.Enter)
+            if (Char.IsLetter(e.KeyChar))
             {
-                Control ctl;
-                ctl = ((Control)sender).Parent;
-                ctl.SelectNextControl(ActiveControl, true, true, true, true);
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (e.KeyChar == (char)Keys.Back)//si es tecla borrar
+            {
+                e.Handled = false;
+            }
+
+            else //Si es otra tecla cancelamos
+            {
+                e.Handled = true;
             }
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
-        {
-            if (txtContra.Text != txtVerificar.Text)
-            {
-                MessageBox.Show("Las contraseñas no coinciden", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                if (toggle)
+
+        { 
+           
+
+                if (txtNombre.Text == "Nombre" || txtPaterno.Text == "Apellido paterno" || txtContra.Text=="Ingresar contraseña" || txtVerificar.Text=="Verificar contraseña" )
                 {
-                    string query = string.Format("INSERT INTO admins (nombre, apelldio_paterno, apellido_materno, contra) VALUES('{0}','{1}','{2}',MD5('{3}'))", txtNombre.Text, txtPaterno.Text, txtMaterno.Text, txtContra.Text);
-                    bd.Execute(query);
-                    query = "SELECT MAX(id)+1 FROM admins";
-                    DataTable dt = new DataTable();
-                    dt = bd.fillTable(query);
-                    tabla.DataSource = dt;
-                    txtMatricula.Text = tabla.Rows[0].Cells[0].Value.ToString();
-                    txtNombre.Text = "";
-                    txtPaterno.Text = "";
+                MessageBox.Show("Favor de llenar todos los campos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+
+            }
+                else if (txtMaterno.Text == "Apellido materno")
+                {
                     txtMaterno.Text = "";
-                    txtContra.Text = "";
-                    txtVerificar.Text = "";
-                    txtNombre_Leave(sender, e);
-                    txtPaterno_Leave(sender, e);
-                    txtMaterno_Leave(sender, e);
-                    txtContra_Leave(sender, e);
-                    txtVerificar_Leave(sender, e);
                 }
-                else
+                else {
+
+
+                if (txtContra.Text != txtVerificar.Text)
                 {
-                    string query = string.Format("INSERT INTO admins (nombre, apelldio_paterno, apellido_materno, contra) VALUES('{0}','{1}','{2}',MD5('{3}'))", txtNombre.Text, txtPaterno.Text, txtMaterno.Text, txtContra.Text);
-                    bd.Execute(query);
-                    Index index = new Index(usuarios);
-                    index.Show();
-                    this.Hide();
-                }
+                    MessageBox.Show("Las contraseñas no coinciden", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }else
+                    {
 
+                    if (ut.contra(txtContra.Text))
+                    {
+                        string query = string.Format("INSERT INTO admins (nombre, apelldio_paterno, apellido_materno, contra) VALUES('{0}','{1}','{2}','{3}')", ut.encriptar(txtNombre.Text), ut.encriptar(txtPaterno.Text), ut.encriptar(txtMaterno.Text), ut.encriptar(txtContra.Text));
+                        bd.Execute(query);
+                        Index index = new Index(usuarios);
+                        index.Show();
+                        this.Hide();
+                    }
+                  else
+                    {
+                        MessageBox.Show("La contraseña tiene que incluir mayusculas, minusculas, digitos y signos por mayor seguridad");
+                    }
+                  
             }
-        }
 
-        private void toogleOff_Click(object sender, EventArgs e)
-        {
-            toogleOff.Visible = false;
-            toggleOn.Visible = true;
-            toggle = true;
         }
-
-        private void toggleOn_Click(object sender, EventArgs e)
-        {
-            toogleOff.Visible = true;
-            toggleOn.Visible = false;
-            toggle = false;
-        }
+    }
 
         private void lblVolver_Click(object sender, EventArgs e)
         {
             Index index = new Index(usuarios);
             index.Show();
             this.Hide();
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            txtNombre.Text = ut.iniciales(txtNombre.Text, txtNombre);
+        }
+
+        private void txtPaterno_TextChanged(object sender, EventArgs e)
+        {
+            txtPaterno.Text = ut.iniciales(txtPaterno.Text, txtPaterno);
+        }
+
+        private void txtMaterno_TextChanged(object sender, EventArgs e)
+        {
+            txtMaterno.Text = ut.iniciales(txtMaterno.Text, txtMaterno);
+        }
+
+        private void RegistrarAdmin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
